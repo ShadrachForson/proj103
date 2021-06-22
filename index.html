@@ -1,0 +1,61 @@
+<!Doctype html>
+<html xml:lang>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width", initial-scale=1.0/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+        <title> QliQulator&trade; </title>
+        
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <p style="font:caption; color:rgb(141, 141, 141)"> <strong> <h3 style="font:caption; color:rgb(42, 173, 248)" id="qliqulato"> QliQulator&trade; </h3></strong></h3></p>
+        
+        <div>
+        <input type="number" onclick="playSound()" id="term_1"  placeholder ="input first term">
+        <input type="number" onclick="playSound()" id="term_2"  placeholder ="input second term">
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <span id="remark" ></span>
+        <br>
+        <br>
+        <!-- span showing remark on computation on inputs from Textbox 1 and Textbox 2 -->
+        <label> <strong> <em>answer is :</em> </strong></label>
+        <!-- span showing result of computation on inputs from Textbox 1 and Textbox 2 -->
+        [ <span id="result" ></span> ]
+        <br><br>
+        <!-- click sound -->
+        <audio id="audio" src="soundfx/mixkit-fast-double-click-on-mouse-275.wav" autoplay="false" ></audio> 
+        <!--button group for operands--> 
+        <div class="container col-sm-12">
+        <input type="button" onclick="playSound(); computeAdd()"       id="addition"       value=" + Add">
+        <input type="button" onclick="playSound(); computeSub()"       id="subtraction"    value="- Subtract">
+        <input type="button" onclick="playSound(); computeDiv()"       id="division"       value=" / Divide">
+        <br>
+        <br>
+        <input type="button" onclick="playSound(); computeMul()"       id="multiplication" value="* Multiply">
+        <input type="button" onclick="playSound(); computeMod()"       id="modulo"         value="% Modulo">
+        <input type="button" onclick="playSound(); computeExp()"       id="exponent"       value=" ^ Exponent">
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer     style="font:caption; color:rgb(170, 170, 170)" id="footer" onload="showDate()">   
+            <strong style="font-family: 'Segoe UI', Tahoma, sans-serif;">QliQulator&trade;</strong> 
+            <strong> &copy; </strong> 
+            <script>document.write(new Date().getFullYear())</script>
+        </footer>
+        <script src="index.js"></script>
+        <!-- <img alt="logo" src=""> -->
+    </body>
+        
+</html>
